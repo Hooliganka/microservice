@@ -1,0 +1,35 @@
+POST 127.0.0.1:8080/api/create/
+Content-Type: application/json
+
+{
+  "title": "Test2",
+  "description": "description",
+  "parameters": {
+    "color": "black",
+    "size": 632
+  }
+}
+
+###
+
+GET 127.0.0.1:8080/api/products/
+Accept: application/json
+
+###
+
+GET 127.0.0.1:8080/api/products_title/?title=asdad
+Accept: application/json
+
+###
+
+GET 127.0.0.1:8080/api/products_title/?parameters.size=123&parameters.color=red
+Accept: application/json
+
+###
+
+GET 127.0.0.1:8080/api/product/5e74288423509978e1505dc1/
+Accept: application/json
+
+###
+
+

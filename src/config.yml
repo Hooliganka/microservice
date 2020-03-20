@@ -1,0 +1,5 @@
+mongo:
+  username: "root"
+  password: "rootpassword"
+  port: 27017
+  host: 'mongodb_container'
